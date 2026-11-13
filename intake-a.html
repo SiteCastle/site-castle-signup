@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Start your website | Site Castle</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="wrap">
+  <header class="site"><a href="index.html">Site Castle</a></header>
+  <main>
+    <h1>Step 1: start your website</h1>
+    <p class="lede">This is what we need to start building. It takes about 10 minutes, and your 14-day clock starts when you send it. We never ask for passwords. Anything we could find on our own is already filled in. Just check it.</p>
+
+    <form name="intake-a" method="POST" action="/" data-netlify="true" netlify-honeypot="bot-field" data-intake novalidate>
+      <input type="hidden" name="form-name" value="intake-a">
+      <p class="hp"><label>Don't fill this out: <input name="bot-field" tabindex="-1" autocomplete="off"></label></p>
+      <fieldset>
+      <legend>1. You</legend>
+      <label for="email">Email you used at checkout</label>
+      <input type="email" id="email" name="email" autocomplete="email" required>
+      <label for="contact_name">Your name</label>
+      <input type="text" id="contact_name" name="contact_name" autocomplete="name" required>
+      <label for="contact_phone">Best phone for us to reach you</label>
+      <input type="tel" id="contact_phone" name="contact_phone" autocomplete="tel" required>
+      </fieldset>
+      <fieldset>
+      <legend>2. Your business, as it should appear on the site</legend>
+      <label for="company">Business name</label>
+      <input type="text" id="company" name="company" autocomplete="organization" required data-prefill>
+      <label for="tagline">Tagline or one-line description <span class="hint">(optional)</span></label>
+      <input type="text" id="tagline" name="tagline" data-prefill>
+      <label for="services">Services you want listed (one per line)</label>
+      <textarea id="services" name="services" rows="5" required data-prefill></textarea>
+      <label for="areas">Cities and areas you serve</label>
+      <input type="text" id="areas" name="areas" required data-prefill>
+      <label for="years">Year you started in business <span class="hint">(optional)</span></label>
+      <input type="text" id="years" name="years" data-prefill>
+      <label for="about">What makes you different? Tell us about the company</label>
+      <textarea id="about" name="about" rows="5" required></textarea>
+      <label for="projects">Past projects you&#x27;re proud of (name, place, size) <span class="hint">(optional)</span></label>
+      <textarea id="projects" name="projects" rows="4"></textarea>
+      <p class="hint">Only real jobs. We never make anything up.</p>
+      </fieldset>
+      <fieldset>
+      <legend>3. Proof customers look for</legend>
+      <label for="license">License numbers <span class="hint">(optional)</span></label>
+      <input type="text" id="license" name="license" data-prefill>
+      <label for="insurance">Insurance carrier and coverage you&#x27;re happy to show <span class="hint">(optional)</span></label>
+      <input type="text" id="insurance" name="insurance">
+      <label for="warranty">Warranties you offer <span class="hint">(optional)</span></label>
+      <textarea id="warranty" name="warranty" rows="2"></textarea>
+      <label for="credentials">Certifications, awards or memberships <span class="hint">(optional)</span></label>
+      <textarea id="credentials" name="credentials" rows="2" data-prefill></textarea>
+      </fieldset>
+      <fieldset>
+      <legend>4. Contact details for the site</legend>
+      <label for="site_phone">Phone number for the site</label>
+      <input type="tel" id="site_phone" name="site_phone" required data-prefill>
+      <label for="site_email">Email that website leads should go to</label>
+      <input type="email" id="site_email" name="site_email" required>
+      <label for="address">Business address to show <span class="hint">(optional)</span></label>
+      <input type="text" id="address" name="address" autocomplete="street-address" data-prefill>
+      <label for="hours">Hours <span class="hint">(optional)</span></label>
+      <input type="text" id="hours" name="hours" placeholder="Mon-Fri 7am-5pm" data-prefill>
+      <label for="social">Facebook, Instagram, Google profile or other links <span class="hint">(optional)</span></label>
+      <textarea id="social" name="social" rows="3" data-prefill></textarea>
+      </fieldset>
+      <fieldset>
+      <legend>5. Look and feel</legend>
+      <label for="likes">Websites you like, and anything you don&#x27;t want <span class="hint">(optional)</span></label>
+      <textarea id="likes" name="likes" rows="3"></textarea>
+      <label for="colors">Brand colors, if you have them <span class="hint">(optional)</span></label>
+      <input type="text" id="colors" name="colors">
+      <p><strong>How will you send your logo and photos?</strong></p>
+      <div class="radios">
+        <label><input type="radio" name="files_how" value="Email" required> Email</label>
+        <label><input type="radio" name="files_how" value="Shared Drive folder" required> Shared Drive folder</label>
+        <label><input type="radio" name="files_how" value="I don&#x27;t have any yet" required> I don&#x27;t have any yet</label>
+      </div>
+      <p class="hint">Email them to kyle@sitecastle.net (just reply to your welcome email) or add them to the shared Drive folder we send you.</p>
+      </fieldset>
+      <fieldset>
+      <legend>6. Going live without breaking anything</legend>
+      <label for="domain">Your website address today <span class="hint">(optional)</span></label>
+      <input type="text" id="domain" name="domain" placeholder="example.com" data-prefill>
+      <label for="registrar">Where that address is registered <span class="hint">(optional)</span></label>
+      <input type="text" id="registrar" name="registrar" placeholder="GoDaddy, Squarespace, Namecheap, not sure" data-prefill>
+      <label for="registrar_owner">Who has the login for that account? <span class="hint">(optional)</span></label>
+      <input type="text" id="registrar_owner" name="registrar_owner">
+      <p><strong>Who runs your business email?</strong></p>
+      <div class="radios">
+        <label><input type="radio" name="email_provider" value="Google (Gmail)" required> Google (Gmail)</label>
+        <label><input type="radio" name="email_provider" value="Microsoft (Outlook)" required> Microsoft (Outlook)</label>
+        <label><input type="radio" name="email_provider" value="GoDaddy" required> GoDaddy</label>
+        <label><input type="radio" name="email_provider" value="Other or not sure" required> Other or not sure</label>
+      </div>
+      <p class="hint">We never touch your email settings. This tells us which settings to leave alone.</p>
+      <label class="check"><input type="checkbox" id="delegate_ok" name="delegate_ok" value="yes" required> <span>I&#x27;ll add Site Castle as a helper on the account that holds my domain when you send the steps. I won&#x27;t share my password.</span></label>
+      </fieldset>
+      <fieldset>
+      <legend>7. Your $1,500 guarantee numbers</legend>
+      <label for="avg_job">Your average job value, in dollars</label>
+      <input type="text" id="avg_job" name="avg_job" placeholder="1500" required>
+      <label for="close_rate">Out of 10 estimates, how many do you usually win?</label>
+      <input type="text" id="close_rate" name="close_rate" placeholder="3" required>
+      <label class="check"><input type="checkbox" id="guarantee_terms" name="guarantee_terms" value="yes" required> <span>I understand the guarantee applies when we answer the tracked phone line, reply to leads within 1 business day, and keep sending job photos and customer contacts.</span></label>
+      </fieldset>
+
+      <button type="submit">Send</button>
+      <p class="saved" id="saved" aria-live="polite"></p>
+
+      <div class="result ok" id="result-ok" role="status" aria-live="polite">
+        <p><strong>Thank you. Your 14-day clock has started.</strong> We build a preview of your site and show it to you before anything goes live.</p><p>Next is a second form about leads, reviews and growth. It is not needed to build your site and is due within 30 days. <a href="intake-b.html">Start the second form now</a>, or use the link in your email later.</p>
+      </div>
+      <div class="result warn" id="result-err" role="alert">
+        <p>Something went wrong sending that. Your answers are still here. Please try again in a moment, or email kyle@sitecastle.net.</p>
+      </div>
+    </form>
+  </main>
+  <footer>
+    <p>Praxis Industries LLC, doing business as Site Castle &middot; <a href="terms.html">Terms</a> &middot; <a href="privacy.html">Privacy</a></p>
+  </footer>
+</div>
+<script src="intake.js"></script>
+</body>
+</html>

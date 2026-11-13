@@ -68,3 +68,12 @@ footer { color: var(--muted); font-size: .85rem; padding: 0 0 40px; font-family:
 footer a { color: var(--muted); }
 .legal h2 { margin-top: 28px; }
 .draftnote { font-family: system-ui, sans-serif; font-size: .9rem; border-left: 3px solid var(--warn); padding: 6px 12px; margin: 16px 0; color: var(--muted); }
+
+/* intake forms */
+fieldset { border: 0; padding: 0; margin: 0 0 8px; }
+legend { font-family: system-ui, sans-serif; font-weight: 700; font-size: 1.1rem; padding: 18px 0 2px; border-top: 1px solid var(--line); width: 100%; }
+fieldset:first-of-type legend { border-top: 0; padding-top: 0; }
+.progress { font-family: system-ui, sans-serif; font-size: .9rem; color: var(--muted); margin: 0 0 8px; }
+.radios label { display: flex; gap: 10px; align-items: flex-start; font-weight: 400; margin: 8px 0; }
+.radios input { margin-top: 4px; width: 18px; height: 18px; flex: none; }
+.saved { font-family: system-ui, sans-serif; font-size: .85rem; color: var(--muted); margin: 10px 0 0; min-height: 1.2em; }
