@@ -6,3 +6,17 @@
   [headers.values]
     X-Content-Type-Options = "nosniff"
     Referrer-Policy = "strict-origin-when-cross-origin"
+
+# The old one-plan sign-up page is retired (2026-11-14). People who land here go to the plans page.
+# Intake forms, terms and privacy stay on this site.
+[[redirects]]
+  from = "/"
+  to = "https://sitecastle.net/plans.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/index.html"
+  to = "https://sitecastle.net/plans.html"
+  status = 301
+  force = true
