@@ -1,3 +1,16 @@
+# The old sign-up page moved to sitecastle.net/plans (2026-11-14). Intake forms, terms and privacy stay here.
+[[redirects]]
+  from = "/"
+  to = "https://sitecastle.net/plans.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/index.html"
+  to = "https://sitecastle.net/plans.html"
+  status = 301
+  force = true
+
 [build]
   publish = "."
 
