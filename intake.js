@@ -50,7 +50,7 @@
     ok.classList.remove("show"); err.classList.remove("show");
     if (!form.checkValidity()) { form.reportValidity(); return; }
     btn.disabled = true;
-    fetch("/", {
+    fetch(location.pathname, { // the page itself: "/" is redirected to the plans page, which breaks the POST
       method: "POST",
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
       body: new URLSearchParams(new FormData(form)).toString()
